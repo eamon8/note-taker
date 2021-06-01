@@ -3,7 +3,7 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 // 
-
+delbtn = document.querySelector('.delete-note');
 
 // Sets up the Express App
 
@@ -80,7 +80,12 @@ app.post('/api/notes', (req, res) => {
   
 //   fs.appendFileSync("assets/db/db.json", "age: 23");
 //   // var writeData = fs.writeFileSync("test.json", JSON.stringify(student));
-//////////////////////////////
+//////////////////////////////    
+const deleteNote = (number) => {
+delete details[0]
+}
+delbtn.addEventListener('keyup', deleteNote(this.id));
+
 });
 // Starts the server to begin listening
 
